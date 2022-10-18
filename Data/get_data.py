@@ -23,7 +23,7 @@ def __main__():
     iemocap_path = args.path
 
     df = pd.DataFrame(columns=["audio", "text", "start", "end", "session", "label"])
-    for ses_num in range(4, 6):
+    for ses_num in range(1, 6):
         session_dir = os.path.join(iemocap_path, f'Session{ses_num}')
         evaluation_dir = os.path.join(session_dir, 'dialog', 'EmoEvaluation')
         transcription_dir = os.path.join(session_dir, 'dialog', 'transcriptions')
